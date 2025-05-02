@@ -66,7 +66,7 @@ def make_tags(tab, word):
 # extra_end('ab'), 'ababab'
 # extra_end('Hi'), 'HiHiHi'  
 def extra_end(s):
-  return 
+  return 3 * s[-2:]
 
 # H. first_half
 # seja uma string s
@@ -75,7 +75,8 @@ def extra_end(s):
 # first_half('HelloThere') -> 'Hello'
 # first_half('abcdef') -> 'abc'
 def first_half(s):
-  return 
+  m = len(s) // 2
+  return s[:m]
 
 # I. sem_pontas
 # seja uma string s de pelo menos dois caracteres
