@@ -85,7 +85,7 @@ def first_half(s):
 # without_end('python') -> 'ytho'
 # without_end('coding') -> 'odin'
 def sem_pontas(s):
-  return 
+  return s[1:-1]
 
 # J. roda2
 # rodar uma string s duas posições
@@ -93,8 +93,8 @@ def sem_pontas(s):
 # left2('Hello') -> 'lloHe'
 # left2('Hi') -> 'Hi'
 def roda2(s):
-  return 
-
+  
+  return s[2:] + s[:2]
 
 # Provided simple test() function used in main() to print
 # what each function returns vs. what it's supposed to return.
