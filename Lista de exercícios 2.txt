@@ -1,0 +1,88 @@
+1-
+a = float(input("Lado 1: "))
+b = float(input("Lado 2: "))
+c = float(input("Lado 3: "))
+
+if a < b + c or b < a + c or c < a + b:
+    print("Podem formar um triângulo")
+    if a == b and a == c:
+        print("O triângulo é isósceles")
+    elif a == b or a == c:
+        print("O triângulo é retângulo")
+    else:
+        print("O triângulo é escaleno")
+
+
+2-
+ano = int(input("Ano: "))
+if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+    print("O ano é bissexto")
+else:
+    print("O ano não é bissexto")
+
+
+3-
+peso = float(input("Peso do peixe: "))
+multa = 0
+excesso = 0
+multa = 0
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+print("Excesso: ", excesso)
+print("Multa: ", multa)
+
+
+4-
+num1 = float(input("1: "))
+num2 = float(input("2: "))
+num3 = float(input("3: "))
+maior = 0
+if num1 > maior:
+    maior = num1
+if num2 > maior:
+    maior = num2
+if num3 > maior:
+    maior = num3
+print(maior)
+
+
+5-
+num1 = float(input("1: "))
+num2 = float(input("2: "))
+num3 = float(input("3: "))
+maior = num1
+menor = num1
+if num2 > maior:
+    maior = num2
+if num2 < menor:
+    menor = num2
+if num3 > maior:
+    maior = num3
+if num3 < menor:
+    menor = num3
+print(maior)
+print(menor)
+
+
+6-
+salH = float(input("Salário por horas: "))
+horas = float(input("Horas por mês: "))
+salM = salH * horas
+ir = salM * 11/100
+inss = salM * 8/100
+sindicato = salM * 5/100
+print("Salário bruto: ", salM)
+print(ir)
+print(inss)
+print(sindicato)
+print(salM - ir - inss - sindicato)
+
+
+7-
+tam = int(input("Tamanho em metros: "))
+litros = tam / 3
+latas = (litros + 17) // 18 
+preco = latas * 80
+print("Latas:", latas)
+print("Preço R$", preco)

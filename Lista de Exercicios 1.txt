@@ -1,0 +1,80 @@
+1-
+x = int(input("Número 1: "))
+y = int(input("Número 2: "))
+print(x+y)
+
+
+2-
+m = float(input("Metros: "))
+ml = m * 1000
+print (ml)
+
+
+3-
+d = int(input("Dias:" ))
+h = int(input("Horas: "))
+m = int(input("Minutos: "))
+s = int(input("Segundos: "))
+total = (d * 86400) + (h * 3600) + (m * 60) + s
+print (total)
+
+
+4-
+sal = float(input("Informe o salário: "))
+por = float(input("Informe a porcentagem de aumento:" ))
+aum = sal * (por/100)
+novo = sal + aum
+print (aum)
+print (novo)
+
+
+5-
+preco = float(input("Informe o preço: "))
+des = float(input("Informe o desconto:" ))
+desconto = preco * (des/100)
+novo = preco - desconto
+print (desconto)
+print (novo)
+
+
+6-
+dis = float(input("Distância: "))
+vel = float(input("Velocidade média:" ))
+tempo = dis/vel
+print("Tempo de viagem: ", tempo)
+
+
+7-
+c = float(input("Celsius: "))
+f = 9 * c/5 + 32
+print ("Fahrenheit: ", f)
+
+
+8-
+f = float(input("Fahrenheit: "))
+c = 5/9 * (f - 32)
+print ("Celsius: ", c)
+
+
+9-
+km = float(input("Km percorrido: "))
+dias = int(input("Dias: "))
+total = (dias * 60) + (km * 0.15)
+print ("Total a pagar: ", total)
+
+
+10-
+dia = int(input("Quantidade de cigarros por dia: "))
+anos = int(input("Anos: "))
+total = (anos * 365) * dia
+tempo = total * 10
+vida = tempo/1440
+print (f"{vida:.2f}")
+
+
+11-
+import sys
+sys.set_int_max_str_digits(1500000)  
+
+num = str(2**1000000)
+print(len(num)) 
